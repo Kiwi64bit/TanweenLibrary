@@ -1,0 +1,52 @@
+body {
+    font-family: 'Cairo', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  header {
+    background-color: #4a2fbd;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  .intro {
+    background: url('https://images.unsplash.com/photo-1512820790803-83ca734da794') no-repeat center center;
+    background-size: cover;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+  }
+  .intro h1 {
+    font-size: 36px;
+  }
+  .section {
+    padding: 40px 20px;
+    background-color: white;
+    margin: 20px 0;
+  }
+  .books {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+  }
+  .book {
+    min-width: 150px;
+    background: #eee;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
