@@ -1,0 +1,93 @@
+header{
+    direction: rtl;
+    font-size: 60px;
+    font-weight: bolder;
+}
+h1{
+font-size:40px ;
+font-weight: bold;
+direction: rtl;
+}
+
+ul{
+    direction: rtl;
+    list-style-type: none;
+    padding:0px;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 3px;
+}
+li{
+
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+
+li:hover {
+    background-color: white;
+    width: 15%;
+  
+  }
+    
+body{
+  background-color: #E0CEBE;
+    background-image: url(../assets/images/settings.jpeg);
+    background-position-y: 200px;
+   background-repeat: no-repeat;
+   background-size: 500px;
+}
+.toolbar {
+    background-color: #333;
+    overflow: hidden;
+    display: flex;
+    padding: 10px;
+    direction: rtl;
+  }
+  
+  .toolbar button {
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .toolbar button:hover {
+    background-color: #666;
+  }
+  .user-info {
+    display: flex;
+    align-items: center; /* محاذاة العناصر عمودياً في المنتصف */
+    padding: 20px; /* إضافة مساحة حول الحاوية */
+    background-color:rgba(255, 255, 255, 0.625); /* لون خلفية فاتح */
+    border-radius: 8px; /* حواف دائرية */
+    margin-bottom: 20px; /* مساحة أسفل الحاوية */
+}
+
+.user-image {
+    width: 50px; /* تحديد عرض الصورة */
+    height: 50px; /* تحديد ارتفاع الصورة */
+    border-radius: 50%; /* لجعل الصورة دائرية */
+    margin-left: 15px; /* مساحة بين الصورة والاسم (لأن النص عربي) */
+    object-fit: cover; /* لضمان احتواء الصورة داخل الدائرة دون تشويه */
+    
+}
+
+.user-name {
+  direction: rtl;
+    font-size: 1.5em; /* حجم خط أكبر للاسم */
+    color: #333; /* لون نص داكن */
+    margin: 0; /* إزالة الهوامش الافتراضية للعنوان */
+    margin-left: 84%;
+}

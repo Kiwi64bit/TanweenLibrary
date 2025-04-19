@@ -1,0 +1,40 @@
+body {
+    font-family: 'Tajawal', sans-serif;
+    background-color: #E0CEBE;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+    direction: rtl;
+}
+
+.container {
+    max-width: 960px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #FFE4C4;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h2, h3 {
+    color: #5A3E36;
+    margin-top: 1.5em;
+}
+
+ul {
+    list-style: square inside;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+li {
+    margin-bottom: 0.5em;
+}
+
+.footer {
+    text-align: center;
+    font-size: 1.2em;
+    color: #666;
+    margin-top: 30px;
+}
