@@ -1,0 +1,119 @@
+body {
+    font-family: 'Cairo', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  header {
+    background-color: #303280;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+    nav {
+      position: sticky;
+      top: 0;
+      background-color: #303280; /* لون الخلفية */
+      z-index: 999;
+      padding: 10px 20px; /* شوية مسافات جوه النافبار */
+
+
+  }
+  nav a {
+    color: rgb(229, 216, 236);
+    
+    margin: 0 10px;
+    text-decoration: none;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 1);
+    transition: 0.6s;
+}
+
+nav a:hover {
+    font-size: 22px; 
+    color: yellow; 
+    text-shadow: 0 0 15px yellow; 
+    transform: translateY(-3px); 
+
+}
+  .intro {
+    background: url('https://images.unsplash.com/photo-1521587760476-6c12a4b040da?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center;
+    background-size: cover;
+    color:#303280;
+    padding: 100px 20px;
+    text-align: center;
+  }
+  .intro h1 {
+    font-size: 36px;
+    
+      color: #303280; 
+      -webkit-text-stroke: 1px #9cbcc4; 
+      
+       
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 1); 
+       
+        font-weight: bold;
+        text-align: center;
+        margin-top: 50px;
+      }
+   
+
+   
+  .section {
+    padding: 20px 20px;
+    background-color: rgb(221, 212, 210);
+    margin: 20px  ;
+  }
+  .books {
+    display: flex;
+    gap:30px 20px;
+    overflow-x: auto;
+  }
+  button {
+   background-color: #a3a3cd;
+   border-radius: 30px;
+   box-shadow: #e4e4ea;
+   color: antiquewhite;
+   padding: 10px 20px;
+   font-size: bold;
+
+  }
+  button:hover {
+    background-color: #1900fc;
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  
+}
+button:active {
+  background-color: #1abc9c;
+  transform: scale(0.95);
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+}
+  .book {
+    min-width: 150px;
+    background: #eee;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+    input[type="email"] {
+      width: 300px; 
+      height: 19px; 
+      padding: 1px; 
+      font-size: 16px;
+      color: #333; 
+      border: 12px solid #303280;  
+      border-radius: 15px; 
+      box-shadow: 0 4px 6px rgba(124, 154, 219, 0.4); 
+    }
+    
+ 
+  footer {
+    background-color: #303280;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
