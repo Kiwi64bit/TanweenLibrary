@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url("../assets/images/📖✨Libros✨📖.jpeg");
+    background-size: cover;         /* تخلي الصورة تغطي كل الجسم */
+    background-position: center;    /* تخلي الصورة تتوسّط الشاشة */
+    background-repeat: no-repeat;   /* تمنع تكرار الصورة */
+    height: 100vh;
+    
+}
+.form1{
+    position: absolute;
+    width:280px ;
+    height: 400px;
+    top:25%  ;
+    transform: translate(-50%,-50%);
+    margin-top: 150px;
+    right: 50% ;
+    left:50% ;
+    text-align: center;
+    border: none;
+    color: #fff;
+    box-sizing: border-box;
+    background: rgba(0,0,0,0.5);
+}
+.imges{
+    width: 240px;
+    height: 40px;
+    background-color: white;
+    margin-left: 20px;
+    margin-top: 10px; 
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+.form1 h1{
+    padding: 10px;
+    color: rgb(227, 190, 55);
+    
+}
+
+#pp {
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 20px;
+    margin-bottom: -5px;
+}
+.hr hr,p{
+    display: inline-block;
+}
+#hr1{
+    margin-top: 30px;
+    width: 38px;
+    height: 2px;
+    margin-left: 20px;
+    background-color:#fff ;
+    float: left;
+}
+#hr2{
+    margin-top: 30px;
+    width: 38px;
+    height: 2px;
+    margin-left: 20px;
+    background-color:#fff ;
+    float: left;
+}
+
+.imges p {
+    color: blue;
+    float: left;
+    padding: 10px;
+    font-family:sans-serif ;
+    font-weight: bold ;
+    margin-left: -5px;
+}
+form img{
+    width: 15px;
+    height: 15px;
+    margin-top: 5px;
+}
+
+form input {
+    width: 70px;
+    height: 25px;
+    text-align: center;
+    border-radius: 0 10px 10px 0;
+    border: none;
+    float:left ;
+    margin: 5px;
+    padding: 5px;
+
+}
+
+.inUser1{
+    
+    display: block;
+    float: left;
+    margin-top: 5px;
+    margin-left: 50px;
+    margin-right: -10px;
+
+
+}
+
+.divimg{
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    border-radius: 10px 0px 0px 20px;
+    padding: 5px;
+    
+}
+
+#div2{
+    margin-top: 10px;
+
+}
+
+form {
+    margin-top: 60px;
+}
+
+#btnlogin{
+    width:86px ;
+    height: 30px;
+    border: none;
+    border-color:forestgreen ;
+    color: white;
+    margin-top: 10px;
+    cursor: pointer;
+}
+#btnlogin{
+    background-color: crimson;
+}
+.supdiv{
+    margin-top: 10px;
+    display: inline-block;
+    display: flex;
+    margin-left: 25px;
+    font-size: 13px;
+}
+
+.ll{
+    width: 150px;
+}
+#pub-site{
+    width: 12px;
+    height: 12px;
+}
+#lb{
+    margin-left: 10px;
+}
+#forgt {
+    width: 150px;
+    height: 100px;
+    margin-top: 50px;
+    margin-left:-50 ;
+    
+    
+}
+#forgt a{
+    
+    color: #a22d2d;
+    text-decoration: none;
+    font-family: "Marhey", sans-serif;
+    font-size: 15px;
+    border-color: #ffffff7f;
+
+}
