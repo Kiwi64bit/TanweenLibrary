@@ -27,7 +27,7 @@ function createResultCard(book) {
     card.className = 'search-result-card';
 
     card.innerHTML = `
-      <img src="../assets/covers/${book.cover}" alt="${book.title}" class="search-result-cover">
+      <img src="assets/covers/${book.cover}" alt="${book.title}" class="search-result-cover">
       <div class="search-result-info">
         <h3 class="search-result-title">${book.title}</h3>
         <p class="search-result-author">${book.author}</p>
@@ -87,7 +87,7 @@ document.addEventListener('DOMContentLoaded', function () {
     let allBooks = [];
 
     // Fetch books data
-    fetch('../data/books.json')
+    fetch('data/books.json')
         .then(response => response.json())
         .then(books => {
             allBooks = books;
