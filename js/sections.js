@@ -31,7 +31,7 @@ function addBooksToGenresSections(genres) {
             bookCard.className = 'book-card';
             bookCard.style.background = `
             linear-gradient(rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 1) 100%),
-            url(assets/covers/${book.cover})
+            url(/assets/covers/${book.cover})
             `;
             bookCard.style.backgroundSize = 'cover';
             bookCard.style.backgroundPosition = 'center'
@@ -48,7 +48,7 @@ function addBooksToGenresSections(genres) {
             bookCard.appendChild(authorElement);
 
             bookCard.addEventListener('click', () => {
-                window.location.href = `pages/book-page.html?id=${book.id}`;
+                window.location.href = `/pages/book-page.html?id=${book.id}`;
             });
 
             booksContainer.appendChild(bookCard);
@@ -67,7 +67,7 @@ function addBooksToGenresSections(genres) {
 
 document.addEventListener('DOMContentLoaded', function () {
     
-    fetch('data/books.json')
+    fetch('/data/books.json')
         .then(response => response.json())
         .then(data => {
             const genres = organizeBooksByGenre(data);

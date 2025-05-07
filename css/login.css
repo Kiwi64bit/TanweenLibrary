@@ -3,7 +3,7 @@
     padding: 0;
 }
 body{
-    background-image: url("../assets/images/📖✨Libros✨📖.jpeg");
+    background-image: url("/assets/images/📖✨Libros✨📖.jpeg");
     background-size: cover;         /* تخلي الصورة تغطي كل الجسم */
     background-position: center;    /* تخلي الصورة تتوسّط الشاشة */
     background-repeat: no-repeat;   /* تمنع تكرار الصورة */
