@@ -90,19 +90,18 @@ document.addEventListener('DOMContentLoaded', function () {
     fetch('data/books.json')
         .then(response => response.json())
         .then(books => {
-            allBooks = books;
+            ['click', 'input'].forEach(event => {
+                searchBar.addEventListener(event, function () {
+                    const searchTerm = this.value.toLowerCase().trim();
+            
+                    searchAndDisplay(books, searchTerm, searchResults)
+                });
+                
+            });
         })
         .catch(error => console.error('Error loading books:', error));
 
     // Search functionality
-    ['click', 'input'].forEach(event => {
-        searchBar.addEventListener(event, function () {
-            const searchTerm = this.value.toLowerCase().trim();
-    
-            searchAndDisplay(allBooks, searchTerm, searchResults)
-        });
-        
-    });
 
     // JavaScript-based truncation function
 
