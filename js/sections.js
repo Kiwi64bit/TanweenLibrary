@@ -67,7 +67,7 @@ function addBooksToGenresSections(genres) {
 
 document.addEventListener('DOMContentLoaded', function () {
     
-    fetch('/data/books.json')
+    fetch('../data/books.json')
         .then(response => response.json())
         .then(data => {
             const genres = organizeBooksByGenre(data);

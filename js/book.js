@@ -18,7 +18,7 @@ function createBookPage() {
     const bookId = urlParams.get('id');
 
     // Fetch book data from the json file
-    fetch('/data/books.json')
+    fetch('../data/books.json')
         .then(Response => Response.json())
         .then(books => {
             const book = books.find(element => element.id == bookId);

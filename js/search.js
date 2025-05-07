@@ -87,7 +87,7 @@ document.addEventListener('DOMContentLoaded', function () {
     let allBooks = [];
 
     // Fetch books data
-    fetch('/data/books.json')
+    fetch('../data/books.json')
         .then(response => response.json())
         .then(books => {
             allBooks = books;
