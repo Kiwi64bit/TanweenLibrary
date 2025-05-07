@@ -1,9 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
 
-body {
+section {
   direction: rtl;
   font-family: 'Cairo', sans-serif;
-  background-color: #E0CEBE;
   margin: 0;
   padding: 0;
   display: flex;
@@ -12,13 +11,8 @@ body {
   height: 100vh;
 }
 
-header{
+header {
  direction: rtl;
-font-size: 60px;
-font-weight: bolder;
-top: 0;
-position: absolute;
-right: 20px;
 }
 
 .container {

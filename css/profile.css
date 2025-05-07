@@ -1,0 +1,72 @@
+/* إعداد عام للصفحة */
+body {
+  background-color: #E0CEBE;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 3%;
+  direction: rtl;
+}
+
+/* معلومات المستخدم */
+.user-info {
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 1em;
+  padding: 2%;
+  margin-bottom: 2%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.user-image {
+  width: 10%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-left: 2%;
+}
+
+.user-name {
+  font-size: 1.8rem;
+  color: #333;
+  margin: 0;
+  flex-grow: 1;
+  text-align: right;
+}
+
+/* قائمة الروابط */
+ul {
+  list-style: none;
+  padding: 0;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 1em;
+  transition: background-color 0.3s ease, padding-right 0.3s ease;
+}
+
+li:hover {
+  background-color: #fff;
+  padding-right: 1%;
+  border-right: 5px solid #303280;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  width: 100%;
+}
+
+/* الفوتر */
+footer {
+  margin-top: 5%;
+  background-color: #303280;
+  color: white;
+  padding: 2%;
+  text-align: center;
+  font-size: 1rem;
+}
