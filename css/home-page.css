@@ -4,7 +4,7 @@ body {
     padding: 0;
     background-color: #f4f4f4;
   }
-  header {
+  /* header {
     background-color: #303280;
     color: white;
     padding: 20px;
@@ -16,9 +16,9 @@ body {
     nav {
       position: sticky;
       top: 0;
-      background-color: #303280; /* لون الخلفية */
+      background-color: #303280; /* لون الخلفية 
       z-index: 999;
-      padding: 10px 20px; /* شوية مسافات جوه النافبار */
+      padding: 10px 20px; /* شوية مسافات جوه النافبار 
 
 
   }
@@ -60,12 +60,182 @@ nav a:hover {
       }
    
 
-   
+    */
+    header {
+      background-color: white;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+  }
+  
+  .header-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 0;
+  }
+  
+  .logo {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #3a4a6d;
+      text-decoration: none;
+  }
+  
+  .logo span {
+      color: #e67e22;
+  }
+  
+  nav ul {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+  }
+  
+  nav ul li {
+      margin-right: 20px;
+  }
+  
+  nav ul li a {
+      text-decoration: none;
+      color: #2c3e50;
+      font-weight: 500;
+      transition: color 0.3s;
+  }
+  
+  nav ul li a:hover {
+      color: #e67e22;
+  }
+  
+  .auth-buttons a {
+      margin-right: 10px;
+      text-decoration: none;
+      padding: 8px 20px;
+      border-radius: 20px;
+      font-weight: 500;
+  }
+  
+  .login-btn {
+      color: #3a4a6d;
+      border: 1px solid #3a4a6d;
+  }
+  
+  .register-btn {
+      background-color: #3a4a6d;
+      color: white;
+  }
+  
+  /* Hero Section */
+  .hero {
+      background: rgba(58, 74, 109, 0.8);
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 120px 0;
+      text-align: center;
+  }
+  
+  .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+  }
+  
+  .hero p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto 30px;
+  }
+  
+  .search-bar {
+      max-width: 600px;
+      margin: 0 auto;
+      position: relative;
+  }
+  
+  .search-bar input {
+      width: 100%;
+      padding: 15px 20px;
+      border-radius: 30px;
+      border: none;
+      font-size: 1rem;
+      font-family: 'Tajawal', sans-serif;
+  }
+  
+  .search-bar button {
+      position: absolute;
+      left: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: #e67e22;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 20px;
+      cursor: pointer;
+  }
   .section {
     padding: 20px 20px;
     background-color: rgb(221, 212, 210);
     margin: 20px  ;
   }
+  
+/* Categories Section */
+.section {
+  padding: 80px 0;
+}
+
+.section-title {
+  text-align: center;
+  color: var(--primary-color);
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.section-title:after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 3px;
+  background: var(--secondary-color);
+  margin: 15px auto;
+}
+
+.categories {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.category-card {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.category-card:hover {
+  transform: translateY(-10px);
+}
+
+.category-img {
+  height: 180px;
+  background-size: cover;
+  background-position: center;
+}
+
+.category-info {
+  padding: 20px;
+}
+
+.category-info h3 {
+  margin-top: 0;
+  color: var(--primary-color);
+}
+
   .books {
     display: flex;
     gap:30px 20px;

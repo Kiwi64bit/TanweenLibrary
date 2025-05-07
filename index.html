@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" dir="rtl">
 <head>
   <meta charset="UTF-8">
   <meta name="description" content="مكتبة إلكترونية تقدم مجموعة واسعة من الكتب في مختلف المجالات. اكتشف، اقرأ، وتعلم.">
@@ -11,76 +10,81 @@
 
 <body>
   <header>
-    <div>تنوين ... حيث تبدأ الرحله</div>
-    <nav>
-      <a href="اكتشف">اكتشف</a>
-      <a href="الكتب">الكتب</a>
-      <a href="التصنيفات">التصنيفات</a>
-      <a href="من نحن">من نحن</a>
-      <a href="تواصل معنا ">تواصل معنا</a>
-    </nav>
-    <div>
-      <button>تسجيل الدخول</button>
+    <div class="container header-container">
+        <a href="#" class="logo">تن<span>وين</span></a>
+        
+        <nav>
+            <ul>
+                <li><a href="#">الرئيسية</a></li>
+                <li><a href="#">تصنيفات الكتب</a></li>
+                <li><a href="#">الأكثر مبيعاً</a></li>
+                <li><a href="#">العروض الخاصة</a></li>
+                <li><a href="#">من نحن</a></li>
+                <li><a href="#">اتصل بنا</a></li>
+            </ul>
+        </nav>
+        
+        <div class="auth-buttons">
+            <a href="#" class="login-btn">تسجيل الدخول</a>
+            <a href="#" class="register-btn">إنشاء حساب</a>
+        </div>
     </div>
-  </header>
+</header>
 
-  <section class="intro">
-    <h1>
-      اقرا باختصار كل الكتب في كل المجالات
-    </h1>
-
-    <button>تصفح الكتب</button>
-  </section>
-
-  <section class="section">
-    <h2>📌 التصنيفات</h2>
-    <div class="books">
-      <div class="book">روايات</div>
-      <div class="book">تنمية بشرية</div>
-      <div class="book">علوم</div>
-      <div class="book">تكنولوجيا</div>
-      <div class="book">تاريخ</div>
-      <div class="book">أطفال</div>
-      <div class="book">فلسفة</div>
-      <div class="book">علم نفس</div>
-      <div class="book">قصص الأنبياء</div>
+<section class="hero">
+    <div class="container">
+        <h1>اكتشف عالمًا من المعرفة مع تنوين</h1>
+        <p>أكبر مكتبة إلكترونية عربية تحتوي على آلاف الكتب في مختلف المجالات، اقرأ أي وقت وفي أي مكان</p>
+        <div class="search-bar">
+            <input type="text" placeholder="ابحث عن كتاب، مؤلف، أو موضوع...">
+            <button> بحث</button>
+        </div>
     </div>
-  </section>
+</section>
+<!-- تصنيقات الكتب  -->
+<section class="section">
+  <div class="container">
+      <h2 class="section-title">تصفح حسب التصنيف</h2>
+      <div class="categories">
+          <div class="category-card">
+              <div class="category-img" style="background-image: url('assets/images/download.png');"></div>
+              <div class="category-info">
+                  <h3>الأدب والرويات</h3>
+                  <p>أكثر من 10,000 عنوان</p>
+                  <a href="#" class="btn">استكشف</a>
+              </div>
+          </div>
+          
+          <div class="category-card">
+              <div class="category-img" style="background-image: url('assets/images/download.png');"></div>
+              <div class="category-info">
+                  <h3>العلوم والتكنولوجيا</h3>
+                  <p>أكثر من 5,000 عنوان</p>
+                  <a href="#" class="btn">استكشف</a>
+              </div>
+          </div>
+          
+          <div class="category-card">
+              <div class="category-img" style="background-image: url('assets/images/download.png');"></div>
+              <div class="category-info">
+                  <h3>التاريخ والجغرافيا</h3>
+                  <p>أكثر من 3,000 عنوان</p>
+                  <a href="#" class="btn">استكشف</a>
+              </div>
+          </div>
+          
+          <div class="category-card">
+              <div class="category-img" style="background-image: url('assets/images/download.png');"></div>
+              <div class="category-info">
+                  <h3>تطوير الذات</h3>
+                  <p>أكثر من 2,500 عنوان</p>
+                  <a href="#" class="btn">استكشف</a>
+              </div>
 
-  <section class="section">
-    <h2> 💥 الأكثر مبيعًا</h2>
-
-    <div class="books">
-
-
-      <div class="book">📖 نظريه الفستق </div>
-      <div class="book">📖 احببت وغدا</div>
-      <div class="book">📖 الاب الغني والاب الفقير </div>
-      <div class="book">📖 الاربعين النوويه </div>
-      <div class="book">📖 العادات السبع للناس الاكثر فعاليه </div>
-      <div class="book">📖 العادات الذريه</div>
-      <div class="book">📖 قوه العادات</div>
-      <div class="book">📖 زدني علما</div>
-    </div>
-  </section>
-
-  <section class="section">
-    <h2>🆕 أحدث الإصدارات</h2>
-    <div class="books">
-      <div class="book">📘 كلمه انجليزي 100 </div>
-      <div class="book">📘 الياقات الست</div>
-      <div class="book">📘 توقف عن ارضاء الاخرين</div>
-      <div class="book">📘 لج</div>
-      <div class="book">📘 الجزار</div>
-      <div class="book">📘 ابابيل</div>
-      <div class="book">📘 POWER</div>
-    </div>
-  </section>
-
-  <section class="section ">
-    <input type="email" placeholder="ادخل بريدك الإلكتروني">
-    <button>اشترك</button>
-  </section>
+          </div>
+      </div>
+  </div>
+</section>
 
   <footer>
     <p>© 2025 مكتبة إلكترونية. جميع الحقوق محفوظة.</p>

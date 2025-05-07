@@ -1,40 +1,218 @@
+
 body {
-    font-family: 'Tajawal', sans-serif;
-    background-color: #E0CEBE;
+    font-family: 'cairo', Arial, sans-serif;
+    line-height: 1.6;
+    color:#333;
     margin: 0;
     padding: 0;
-    color: #333;
-    line-height: 1.6;
-    direction: rtl;
+    background-color: #f9f9f9;
 }
+header {
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color:#3a4a6d;
+    text-decoration: none;
+}
+
+.logo span {
+    color: #e67e22;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #2c3e50;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color:#e67e22;
+}
+
+.auth-buttons a {
+    margin-right: 10px;
+    text-decoration: none;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-weight: 500;
+}
+
+.login-btn {
+    color: #3a4a6d;
+    border: 1px solid #3a4a6d;
+}
+
+.register-btn {
+    background-color: #3a4a6d;
+    color: white;
+}
+
 
 .container {
-    max-width: 960px;
-    margin: 40px auto;
-    padding: 20px;
-    background-color: #FFE4C4;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
-h2, h3 {
-    color: #5A3E36;
-    margin-top: 1.5em;
+
+h1 {
+    margin: 0;
+    font-size: 2.5rem;
 }
 
-ul {
-    list-style: square inside;
-    margin-left: 0;
-    padding-left: 0;
-}
-
-li {
-    margin-bottom: 0.5em;
-}
-
-.footer {
+.intro {
+    background: rgba(44, 62, 80, 0.8);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 0;
     text-align: center;
-    font-size: 1.2em;
-    color: #666;
-    margin-top: 30px;
+}
+
+.section {
+    padding: 60px 0;
+}
+
+.section-title {
+    text-align: center;
+    color: #3a4a6d;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.section-title:after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 3px;
+    background: #e67e22;
+    margin: 15px auto;
+}
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 40px;
+}
+
+.about-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.about-image {
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+}
+
+.about-image img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+
+
+.team {
+    background-color: #f5f7fa;
+}
+
+.team-members {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.team-member {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    text-align: center;
+}
+
+
+
+.before-footer{
+    background-color: #e67e22;
+    color: white;
+    text-align: center;
+    padding: 80px 0;
+}
+
+.before-footer h2 {
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background: #3a4a6d;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: white;
+    color: #3a4a6d;
+    transform: translateY(-3px);
+}
+
+footer {
+    background-color:#2c3e50;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 60px;
 }
