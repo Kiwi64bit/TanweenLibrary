@@ -67,26 +67,26 @@ body{
   }
   .user-info {
     display: flex;
-    align-items: center; /* محاذاة العناصر عمودياً في المنتصف */
-    padding: 20px; /* إضافة مساحة حول الحاوية */
-    background-color:rgba(255, 255, 255, 0.625); /* لون خلفية فاتح */
-    border-radius: 8px; /* حواف دائرية */
-    margin-bottom: 20px; /* مساحة أسفل الحاوية */
+    align-items: center; 
+    padding: 20px; 
+    background-color:rgba(255, 255, 255, 0.625); 
+    border-radius: 8px; 
+    margin-bottom: 20px;
 }
 
 .user-image {
-    width: 50px; /* تحديد عرض الصورة */
-    height: 50px; /* تحديد ارتفاع الصورة */
-    border-radius: 50%; /* لجعل الصورة دائرية */
-    margin-left: 15px; /* مساحة بين الصورة والاسم (لأن النص عربي) */
-    object-fit: cover; /* لضمان احتواء الصورة داخل الدائرة دون تشويه */
+    width: 50px; 
+    height: 50px;
+    border-radius: 50%; 
+    margin-left: 15px; 
+    object-fit: cover; 
     
 }
 
 .user-name {
   direction: rtl;
-    font-size: 1.5em; /* حجم خط أكبر للاسم */
-    color: #333; /* لون نص داكن */
-    margin: 0; /* إزالة الهوامش الافتراضية للعنوان */
+    font-size: 1.5em; 
+    color: #333; 
+    margin: 0; 
     margin-left: 84%;
 }
