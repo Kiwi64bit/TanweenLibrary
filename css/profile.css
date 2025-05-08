@@ -1,67 +1,77 @@
-/* إعداد عام للصفحة */
 body {
   background-color: #E0CEBE;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
-  padding: 3%;
+  padding: 0;
   direction: rtl;
 }
 
-/* معلومات المستخدم */
-.user-info {
+
+.profile-section {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.7);
+  margin-top: 5%;
+}
+
+
+.user-card {
+  background-color: rgba(255, 255, 255, 0.9);
   border-radius: 1em;
-  padding: 2%;
-  margin-bottom: 2%;
-  width: 100%;
-  box-sizing: border-box;
+  padding: 2em;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 300px;
 }
 
 .user-image {
-  width: 10%;
-  aspect-ratio: 1/1;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
   object-fit: cover;
-  margin-left: 2%;
+  margin-bottom: 1em;
 }
 
 .user-name {
   font-size: 1.8rem;
   color: #333;
   margin: 0;
-  flex-grow: 1;
-  text-align: right;
 }
 
-/* قائمة الروابط */
-ul {
+
+.options-list {
+  margin-top: 2em;
+  width: 300px;
+}
+
+.options-list ul {
   list-style: none;
   padding: 0;
-  font-size: 1.5rem;
   margin: 0;
+  font-size: 1.2rem;
 }
 
-li {
+.options-list li {
   margin-bottom: 1em;
   transition: background-color 0.3s ease, padding-right 0.3s ease;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 0.5em 1em;
+  border-radius: 0.5em;
 }
 
-li:hover {
+.options-list li:hover {
   background-color: #fff;
-  padding-right: 1%;
+  padding-right: 1.5em;
   border-right: 5px solid #303280;
 }
 
-a {
+.options-list a {
   text-decoration: none;
   color: black;
-  display: inline-block;
-  width: 100%;
+  display: block;
 }
 
-/* الفوتر */
+
 footer {
   margin-top: 5%;
   background-color: #303280;
