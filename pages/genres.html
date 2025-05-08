@@ -1,11 +1,15 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html dir="rtl" lang="ar">
+
 <head>
     <meta charset="UTF-8">
-    <title>تغيير كلمة المرور</title>
-    <link rel="stylesheet" href="/css/passwordChange.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تنوين</title>
+    <link rel="stylesheet" href="/css/home-page.css">
+    <link rel="stylesheet" href="/css/search.css">
     <link rel="stylesheet" href="/css/nav-footer.css">
 </head>
+
 <body>
     <header>
         <div class="logo">تنوين</div>
@@ -25,22 +29,22 @@
         </nav>
     </header>
 
-     <section>
-    <div class="container">
-        <h2>
-            تغيير كلمة المرور
-        </h2>
-        <form>
-            <input type="password" placeholder="ادخل كلمة المرور الجديدة" required>
-            <button type="submit">تأكيد
-                
-            </button>
-            </div>
-        </form>
-    </section>
+    <div class="search">
+        <div class="search-container">
+            <input type="text" id="search-bar" placeholder="ابحث عن كتاب أو مؤلف..." autocomplete="off">
+            <div id="search-results" class="search-results"></div>
+        </div>
+        <button id="search-button">بحث</button>
+    </div>
+
+    <div id="books-container"></div>
     <footer>
         <p>مكتبة تنوين الإلكترونية. جميع الحقوق محفوظة.</p>
         <p>تابعنا على وسائل التواصل الاجتماعي: فيسبوك | انستجرام | تويتر</p>
     </footer>
+
+    <script src="/js/sections.js"></script>
+    <script src="/js/search.js"></script>
 </body>
+
 </html>
