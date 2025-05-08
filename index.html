@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>تنوين</title>
     <link rel="stylesheet" href="/css/nav-footer.css">
+    <link rel="stylesheet" href="/css/home.css">
 </head>
 
 <body>
@@ -28,7 +29,43 @@
     </header>
 
     <section>
-        جاري العمل عليها
+        <div class="hero">
+            <h1>ابحث عن كتابك القدم</h1>
+            <p>آلاف العنواين. إختيارات متعددة. كتب مخصصة.</p>
+            <div class="buttons">
+              <a href="#">إبدأ القراءة</a>
+              <a href="#">إشترك الآن</a>
+            </div>
+          </div>
+        
+          <div class="section">
+            <h2>لماذا تنوين؟</h2>
+            <ul>
+              <li>آلاف الكتب في كل المجالات.</li>
+              <li>توصيات متخصصة</li>
+              <li>معلومات موثوقة, ووعناوين مضمونة.</li>
+            </ul>
+          </div>
+        
+          <div class="section categories">
+            <h2>Browse by Category</h2>
+            <p>
+              <a href="#">Fiction</a> |
+              <a href="#">Non-fiction</a> |
+              <a href="#">Mystery</a> |
+              <a href="#">Romance</a> |
+              <a href="#">Sci-fi</a> |
+              <a href="#">Children’s Books</a>
+            </p>
+          </div>
+        
+          <div class="section newsletter">
+            <h2>شاركنا خبرتك</h2>
+            <p>إشترك معنا ليصلك جديد الأخبار والكتب.</p>
+            <input type="email" id="email" placeholder="ادخل بريدك الإلكتروني." />
+            <button onclick="subscribe()">إشترك</button>
+            <p id="message" style="margin-top:10px;"></p>
+          </div>
     </section>
 
     <footer>
@@ -36,6 +73,7 @@
         <p>تابعنا على وسائل التواصل الاجتماعي: فيسبوك | انستجرام | تويتر</p>
     </footer>
 
+    <script src="/js/home.js"></script>
 </body>
 
 </html>
