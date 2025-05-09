@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>من نحن - مكتبتنا الإلكترونية</title>
-    <link rel="stylesheet" href="/css/libraryInfo.css">    
+    <link rel="stylesheet" href="/css/libraryInfo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">    
 </head>
 <body>
     <header>
@@ -22,7 +23,7 @@
             
             <div class="auth-buttons">
                 <a href="/pages/login.html" class="login-btn">تسجيل الدخول</a>
-                <a href="/pages/login.html" class="register-btn">إنشاء حساب</a>
+                <a href="/pages/signup.html" class="register-btn">إنشاء حساب</a>
             </div>
         </div>
     </header>
@@ -55,15 +56,24 @@
         <div class="container">
             <h2 class="section-title">لماذا تختارنا؟</h2>
             <div class="features">
-                <div class="card">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-book-open"></i>
+                    </div>
                     <h3>مجموعة كتب واسعة</h3>
                     <p>أكثر من 50,000 عنوان في مختلف المجالات، مع تحديث مستمر لإضافة أحدث الإصدارات.</p>
                 </div>
-                <div class="card">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
                     <h3>جودة عالية</h3>
                     <p>نحرص على تقديم كتب بجودة عالية من حيث المحتوى والإخراج الفني.</p>
                 </div>
-                <div class="card">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
                     <h3>دعم فني مميز</h3>
                     <p>فريق دعم فني متاح على مدار الساعة لمساعدتك في أي استفسار أو مشكلة تواجهك.</p>
                 </div>
@@ -123,13 +133,25 @@
         <div class="container">
             <h2>انضم إلى مجتمعنا من القراء</h2>
             <p>اشترك الآن واحصل على إمكانية الوصول إلى آلاف الكتب بخصومات حصرية</p>
-            <a href="/pages/genres.html" class="btn">ابدأ القراءة الآن</a>
+            <a href="/pages/book-page.html" class="btn">ابدأ القراءة الآن</a>
         </div>
     </section>
     
     <footer>
         <div class="container">
+            <div class="footer-column">
+                <h3>عن تنوين</h3>
+                <p>منصة عربية رائدة في مجال الكتب الإلكترونية، نسعى لنشر المعرفة وجعل القراءة في متناول الجميع.</p>
+            </div>
             <p>© 2025 مكتبتنا الإلكترونية. جميع الحقوق محفوظة</p>
+            <div style="margin-top: 20px;">
+                <a href="https://www.facebook.com" style="color: white; margin: 0 10px;"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.x.com/" style="color: white; margin: 0 10px;"><i class="fab fa-x"></i></a>
+                <a href="https://www.instagram.com/" style="color: white; margin: 0 10px;"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin-in.com/" style="color: white; margin: 0 10px;"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.tiktok.com/" style="color: white; margin: 0 10px;"><i class="fab fa-tiktok"></i></a>
+                
+            </div>
         </div>
     </footer>
 </body>
