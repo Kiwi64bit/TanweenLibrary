@@ -27,11 +27,7 @@ function createResultCard(book) {
     card.className = 'search-result-card';
 
     card.innerHTML = `
-<<<<<<< HEAD
-      <img src="assets/covers/${book.cover}" alt="${book.title}" class="search-result-cover">
-=======
       <img src="/assets/covers/${book.cover}" alt="${book.title}" class="search-result-cover">
->>>>>>> 97555f164a59df679c4995a8cc589ad9702f51b8
       <div class="search-result-info">
         <h3 class="search-result-title">${book.title}</h3>
         <p class="search-result-author">${book.author}</p>
