@@ -1,0 +1,83 @@
+section {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .contact-container {
+    width: 90%;
+    max-width: 600px;
+    margin: 5% auto;
+    background-color: white;
+    padding: 5%;
+    border-radius: 2%;
+    box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.1);
+    direction: rtl;
+    text-align: right;
+  }
+  
+  h1, h2 {
+    color: #2c3e50;
+    margin-bottom: 2%;
+    font-size: 2em;
+  }
+  
+  .welcome {
+    color: #555;
+    margin-bottom: 4%;
+    font-size: 1em;
+  }
+  
+  label {
+    display: block;
+    margin: 3% 0 1%;
+    color: #333;
+    font-size: 1em;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 3%;
+    border: 1px solid #ccc;
+    border-radius: 1%;
+    box-sizing: border-box;
+    font-size: 1em;
+  }
+  
+  button {
+    margin-top: 5%;
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    padding: 3% 5%;
+    border-radius: 1.5%;
+    cursor: pointer;
+    font-size: 1em;
+  }
+  
+  button:hover {
+    background-color: #1c5980;
+  }
+  
+  .contact-details {
+    margin-top: 5%;
+    padding-top: 4%;
+    border-top: 1px solid #ddd;
+  }
+  
+  .contact-details ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .contact-details li {
+    margin-bottom: 3%;
+    color: #333;
+    font-size: 1em;
+  }
+pre{
+    font-size: 150%;
+    text-align: right;
+    direction:ltr ;
+    margin-right: 1.5%;
+}  

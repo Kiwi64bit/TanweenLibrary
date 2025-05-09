@@ -1,10 +1,9 @@
 function UpdateBookInformation(book) {
     if (book) {
-        // Update the html with the book data
         document.title = book.title;
         document.getElementById('book-title').textContent = book.title;
         document.getElementById('book-author').textContent = book.author;
-        document.getElementById('book-cover').src = `../assets/covers/${book.cover}`;
+        document.getElementById('book-cover').src = `/assets/covers/${book.cover}`;
         document.getElementById('book-description').textContent = book.description;
         document.getElementById('book-year').textContent = book.year;
     } else {
@@ -18,7 +17,7 @@ function createBookPage() {
     const bookId = urlParams.get('id');
 
     // Fetch book data from the json file
-    fetch('../data/books.json')
+    fetch('/data/books.json')
         .then(Response => Response.json())
         .then(books => {
             const book = books.find(element => element.id == bookId);

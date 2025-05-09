@@ -1,6 +1,6 @@
 function truncateDescription(element) {
     const fullText = element.textContent;
-    const charLimit = 120; // Adjust as needed
+    const charLimit = 120;
 
     if (fullText.length > charLimit) {
         const truncatedText = fullText.slice(0, charLimit) + '...';
@@ -12,7 +12,7 @@ function truncateDescription(element) {
         btn.textContent = 'أظهر المزيد';
 
         btn.addEventListener('click', (e) => {
-            e.stopPropagation(); // Prevent card click
+            e.stopPropagation();
             element.textContent = fullText;
             btn.remove();
         });
@@ -27,7 +27,11 @@ function createResultCard(book) {
     card.className = 'search-result-card';
 
     card.innerHTML = `
+<<<<<<< HEAD
       <img src="assets/covers/${book.cover}" alt="${book.title}" class="search-result-cover">
+=======
+      <img src="/assets/covers/${book.cover}" alt="${book.title}" class="search-result-cover">
+>>>>>>> 97555f164a59df679c4995a8cc589ad9702f51b8
       <div class="search-result-info">
         <h3 class="search-result-title">${book.title}</h3>
         <p class="search-result-author">${book.author}</p>
@@ -36,7 +40,7 @@ function createResultCard(book) {
     `;
 
     card.addEventListener('click', () => {
-        window.location.href = `../pages/book-page.html?id=${book.id}`;
+        window.location.href = `/pages/book-page.html?id=${book.id}`;
     });
 
     const descEl = card.querySelector('.search-result-description');
@@ -87,7 +91,7 @@ document.addEventListener('DOMContentLoaded', function () {
     let allBooks = [];
 
     // Fetch books data
-    fetch('data/books.json')
+    fetch('/data/books.json')
         .then(response => response.json())
         .then(books => {
             ['click', 'input'].forEach(event => {
@@ -100,10 +104,6 @@ document.addEventListener('DOMContentLoaded', function () {
             });
         })
         .catch(error => console.error('Error loading books:', error));
-
-    // Search functionality
-
-    // JavaScript-based truncation function
 
     // Close search results when clicking outside
     document.addEventListener('click', function (e) {
