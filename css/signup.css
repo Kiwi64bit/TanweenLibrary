@@ -1,14 +1,12 @@
-
 *{
     margin: 0;
     padding: 0;
 }
-
 body{
-    background-image: url("../assets/images/📖✨Libros✨📖.jpeg");
-    background-size: cover;         /* تخلي الصورة تغطي كل الجسم */
-    background-position: center;    /* تخلي الصورة تتوسّط الشاشة */
-    background-repeat: no-repeat;   /* تمنع تكرار الصورة */
+    background-image: url("../assets/images/Abstract\ blur\ library\ Blurred\ book\ shelves\ and\ hall\ Generative\ Ai\ _\ Premium\ AI-generated\ image.jpeg");
+    background-size: cover;         
+    background-position: center;    
+    background-repeat: no-repeat;   
     height: 100vh;
     
 }
@@ -97,20 +95,26 @@ h1 {
     margin: 0;
     font-size: 2.5rem;
 }
+
 .form1{
     position: absolute;
     width:280px ;
-    height: 400px;
+    height: 500px;
     top:25%  ;
     transform: translate(-50%,-50%);
-    margin-top: 150px;
+    margin-top: 180px;
+    border-radius: 25px;
+    
     left:50% ;
     text-align: center;
     border: none;
     color: #fff;
     box-sizing: border-box;
     background: rgba(0,0,0,0.5);
-    border-radius: 25px;
+}
+.form1 span{
+    color: #3a4a6d;
+
 }
 .imges{
     width: 240px;
@@ -125,18 +129,17 @@ h1 {
 
 .form1 h1{
     padding: 10px;
-    color: #e67d22b1;
+    color: #e67e22;
     
-}
-.form1 span{
-    color: #3a4a6db7;
 }
 
 #pp {
     font-size: 20px;
+    font-weight: 100;
     font-family: 'Courier New', Courier, monospace;
     margin-top: 20px;
-    margin-bottom: -5px;
+    margin-left: 10px;
+    
 }
 .hr hr,p{
     display: inline-block;
@@ -190,7 +193,19 @@ form input {
     float: left;
     margin-top: 5px;
     margin-left: 50px;
-    margin-right: -10px;
+    margin-right: -5px;
+
+
+}
+.inUser1{
+    
+    display: block;
+    
+    margin-top: 5px;
+    margin-left: 50px;
+    margin-right: -5px;
+    
+    
 
 
 }
@@ -201,6 +216,7 @@ form input {
     background-color: white;
     border-radius: 10px 0px 0px 20px;
     padding: 5px;
+    margin-bottom: 6px;
     
 }
 
@@ -209,24 +225,20 @@ form input {
 
 }
 
-form {
-    margin-top: 60px;
-}
 
 #btnlogin{
     width:86px ;
     height: 30px;
-    border: none;
-    border-color:forestgreen ;
+    border:none ;
+    border-color:rgb(92, 13, 13) ;
     color: white;
-    margin-top: 10px;
+    margin-top: 30px;
+    margin-right: 60px;
     cursor: pointer;
-}
-#btnlogin{
     background-color: crimson;
     border-radius: 25px;
-    margin-top:20px ;
 }
+
 .supdiv{
     margin-top: 10px;
     display: inline-block;
@@ -234,36 +246,37 @@ form {
     margin-left: 25px;
     font-size: 13px;
 }
-.supdiv input{
-    margin-right: 20px;
-}
 
 .ll{
-    width: 150px;
+    width: 160px;
+    margin-left:-1px;
+    
+    
 }
 #pub-site{
     width: 12px;
     height: 12px;
+    margin-right: 20px;
+
 }
 #lb{
-    margin-right: 10px;
+    margin-right:5px;
 }
 #forgt {
     width: 150px;
     height: 100px;
-    margin-top: 40px;
+    margin-top: 50px;
+    margin-left:-50 ;
     
     
 }
-.btne{
-    width: 150px;
-    height: 30px;
-    border: none;
-    border-radius: 25px;
-    color: #a22d2d;
-    background-color: #e67e22;
+#forgt a{
+    
+    margin-left: 20px;
+    color: #71ba7b;
+    text-decoration: none;
     font-family: "Marhey", sans-serif;
-    font-size: 15px;
+    font-size: 20px;
     border-color: #ffffff7f;
-    margin-left: 100px;
+
 }
