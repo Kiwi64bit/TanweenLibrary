@@ -5,7 +5,6 @@ function UpdateBookInformation(book) {
         document.getElementById('book-author').textContent = book.author;
         document.getElementById('book-cover').src = `/assets/covers/${book.cover}`;
         document.getElementById('book-description').textContent = book.description;
-        document.getElementById('book-year').textContent = book.year;
     } else {
         document.getElementById('book-container').innerHTML = "<h1>Book not found!</h1>";
     }
