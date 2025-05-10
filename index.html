@@ -6,51 +6,54 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>تنوين</title>
   <link rel="stylesheet" href="/css/home.css">
+  <link rel="stylesheet" href="/css/search.css">
 </head>
 
 <body>
-  <section>
-    <div class="hero">
-      <h1>ابحث عن كتابك القدم</h1>
-      <p>آلاف العنواين. إختيارات متعددة. كتب مخصصة.</p>
-      <div class="buttons">
-        <a href="/pages/genres.html">إبدأ القراءة</a>
-        <a href="/pages/signup.html">إشترك الآن</a>
-      </div>
-    </div>
+  <div class="intro">
+    <h1>اكتشف عالمًا من المعرفة مع تنوين</h1>
+    <p> مكتبة إلكترونية عربية تحتوي على العديد من الكتب في مختلف المجالات.</p>
+    <p>اقرأ في أي وقت وفي أي مكان.</p>
 
-    <div class="section">
+    <div class="buttons">
+      <a href="/pages/genres.html">إبدأ القراءة</a>
+      <a href="/pages/signup.html">إشترك الآن</a>
+    </div>
+  </div>
+
+  <section>
+    <div class="sec1">
       <h2>لماذا تنوين؟</h2>
       <ul>
-        <li>آلاف الكتب في كل المجالات.</li>
+        <li>آلاف الكتب في كل المجالات</li>
         <li>توصيات متخصصة</li>
-        <li>معلومات موثوقة, ووعناوين مضمونة.</li>
+        <li>معلومات موثوقة وعناوين مضمونة</li>
       </ul>
     </div>
 
-    <div class="section categories">
-      <h2>Browse by Category</h2>
-      <p>
-        <a href="#">Fiction</a> |
-        <a href="#">Non-fiction</a> |
-        <a href="#">Mystery</a> |
-        <a href="#">Romance</a> |
-        <a href="#">Sci-fi</a> |
-        <a href="#">Children’s Books</a>
-      </p>
-    </div>
-
-    <div class="section newsletter">
+    <div class="sec2">
       <h2>شاركنا خبرتك</h2>
       <p>إشترك معنا ليصلك جديد الأخبار والكتب.</p>
-      <input type="email" id="email" placeholder="ادخل بريدك الإلكتروني." />
-      <button onclick="subscribe()">إشترك</button>
-      <p id="message" style="margin-top:10px;"></p>
+      <div class="email">
+        <input type="email" id="email" placeholder="ادخل بريدك الإلكتروني." />
+        <button onclick="subscribe()">إشترك</button>
+      </div>
+      <p id="message"></p>
+    </div>
+
+    <div class="sec3">
+      <h2>كل شيء في مكان واحد</h2>
+      <ul>
+        <li>مجالات متعددة</li>
+        <li>مؤلفين من جميع الفئات</li>
+        <li>واجهة سهلة وبسيطة</li>
+      </ul>
     </div>
   </section>
 
-  <script src="/js/home.js"></script>
+
   <script src="/js/header-footer.js"></script>
+  <script src="/js/home.js"></script>
 </body>
 
 </html>

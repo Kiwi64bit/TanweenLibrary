@@ -32,10 +32,10 @@ section {
     border-radius: 25px;
     width: 80%;
     max-width: 300px;
-    height: 500px;
+    height: 400px;
 }
 
-.signup {
+.signin {
     color: white;
 }
 
@@ -60,7 +60,7 @@ section {
     transform: translateY(-50%);
 }
 
-.info input {
+.info input{
     position: relative;
     font-family: inherit;
     padding: 5px 10px;
@@ -70,7 +70,7 @@ section {
     box-sizing: border-box;
 }
 
-.info .create-account {
+.info .login {
     font-family: inherit;
     border: none;
     font-size: 1rem;
@@ -78,10 +78,9 @@ section {
     border-radius: 5px;
     color: white;
     padding: 5px 10px;
-    cursor: pointer;
 }
 
-.yes-account {
+.no-account {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -90,15 +89,17 @@ section {
     padding: 1rem;
 }
 
-.yes-account p {
+.no-account p {
     margin: 0;
     color: red;
 }
 
-.yes-account a {
+.no-account a {
     text-decoration: none;
     color: white;
     background-color: orange;
     padding: 5px 10px;
     border-radius: 5px;
+    cursor: pointer;
 }
+

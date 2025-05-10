@@ -10,15 +10,17 @@
 </head>
 
 <body>
-    <div class="search">
-        <div class="search-container">
-            <input type="text" id="search-bar" placeholder="ابحث عن كتاب أو مؤلف..." autocomplete="off">
-            <div id="search-results" class="search-results"></div>
+    <section>
+        <div class="search">
+            <div class="search-container">
+                <input type="text" id="search-bar" placeholder="ابحث عن كتاب أو مؤلف..." autocomplete="off">
+                <img class="magnifying-glass" src="/assets/icons/magnifying-glass.svg" alt="">
+                <div id="search-results" class="search-results"></div>
+            </div>
         </div>
-        <button id="search-button">بحث</button>
-    </div>
+        <div id="sections-container"></div>
+    </section>
 
-    <div id="books-container"></div>
     <script src="/js/sections.js"></script>
     <script src="/js/search.js"></script>
     <script src="/js/header-footer.js"></script>

@@ -6,31 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>تنوين</title>
     <link rel="stylesheet" href="/css/header-footer.css">
+
+    <style>
+        body {
+            margin: 0;
+        }
+    </style>
 </head>
 
 <body>
     <header id="header">
-        <div class="logo">تنوين</div>
+        <a href="/index.html" class="logo">
+            تن<span>وين</span>
+        </a>
         <nav>
             <ul>
-                <li><a href="/index.html">الصفحة الرئيسية</a></li>
-                <li><a href="/pages/genres.html">تصنيفات الكتب</a></li>
+                <li><a href="/index.html">الرئيسية</a></li>
+                <li><a href="/pages/genres.html">الكتب</a></li>
                 <li><a href="/pages/libraryInfo.html">حول المكتبة</a></li>
                 <li><a href="/pages/contactUs.html">تواصل معنا</a></li>
-                <div class="profile">
-                    <img class="profile-img" src="/assets/images/blank-profile-picture.png" alt="profile">
-                    <a href="/pages/login.html">
-                        <button class="sign-in">تسجيل الدخول</button>
-                    </a>
-                </div>
             </ul>
         </nav>
+        <div class="profile">
+            <a href="/pages/profile.html" class="profile-image"></a>
+            <a href="/pages/signin.html" class="sign-up">تسجيل الدخول</a>
+        </div>
     </header>
 
-
     <footer id="footer">
-        <p>مكتبة تنوين الإلكترونية. جميع الحقوق محفوظة.</p>
-        <p>تابعنا على وسائل التواصل الاجتماعي: فيسبوك | انستجرام | تويتر</p>
+        <p>&copy; 2025 مكتبة تنوين الإلكترونية. جميع الحقوق محفوظة.</p>
+        <div class="social-media">
+            <a href="#"><img src="/assets/icons/facebook.svg" alt="facebook"></a>
+            <a href="#"><img src="/assets/icons/instagram.svg" alt="instagram"></a>
+            <a href="#"><img src="/assets/icons/linkedin-in.svg" alt="linked in"></a>
+            <a href="#"><img src="/assets/icons/telegram.svg" alt="telegram"></a>
+            <a href="#"><img src="/assets/icons/x-twitter.svg" alt="x-twitter"></a>
+            <a href="#"><img src="/assets/icons/youtube.svg" alt="youtube"></a>
+        </div>
+
     </footer>
 </body>
 

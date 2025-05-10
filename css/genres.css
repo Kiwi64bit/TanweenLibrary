@@ -1,7 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+
+body {
+    font-family: 'Tajawal', Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+section {
+    background: linear-gradient(rgba(58, 74, 109, 1), rgba(58, 74, 109, 0) 20%);
+}
+
 .search {
     display: flex;
-    margin: 1.5rem 0;
-    padding: 0 1rem;
+    padding: 1.5rem 1rem;
 }
 
 .search-container {
@@ -11,60 +21,51 @@
 
 #search-bar {
     padding: 0.8rem;
-    border: 3px solid #ddd;
-    border-radius: 4px;
+    font-family: inherit;
+    border: none;
+    border-radius: 999px;
     width: 100%;
     box-sizing: border-box;
     font-size: 1rem;
-    outline: none;
+    outline: 3px solid #ddd;
     transition: border-color 0.4s;
 }
 
 #search-bar:hover {
-    border-color: #bbb;
+    outline-color: #bbb;
 }
 
 #search-bar:focus {
-    border-color: var(--secondary-color);
+    outline-color: orange;
 }
 
-#search-button {
-    background-color: var(--secondary-color);
-    color: white;
-    border: none;
-    margin: 0px 8px 0px 0px;
-    padding: 0 1.5rem;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: opacity 0.3s;
-}
-
-#search-button:hover {
-    opacity: 0.7;
-}
-
-#search-button:active {
-    opacity: 1;
+.search-container .magnifying-glass {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.5;
 }
 
 .genre-section {
-    margin: 2rem 0;
-    padding: 0 1rem;
+    padding: 1rem 1rem;
 }
 
 .genre-title {
     font-size: 1.5rem;
-    margin-bottom: 1rem;
+    color: black;
+    margin: 0;
     padding-bottom: 0.5rem;
-    border-bottom: 2px solid var(--secondary-color);
-    color: var(--primary-color);
+    border-bottom: 2px solid #3498db;
 }
 
 .books-container {
     display: flex;
     gap: 1rem;
     overflow-x: auto;
-    padding-bottom: 1rem;
+    padding-bottom: 0.5rem;
 }
 
 .book-card {
@@ -72,7 +73,7 @@
     min-width: 180px;
     height: 250px;
     padding: 1rem;
-    margin: 0.5rem 0.5rem 0 0;
+    margin: 1rem 0.5rem 0 0;
     color: white;
     border-radius: 5px;
     flex-direction: column;
@@ -100,7 +101,7 @@
 }
 
 .view-all a {
-    color: var(--secondary-color);
+    color: #3498db;
     text-decoration: none;
     font-size: 0.9rem;
 }

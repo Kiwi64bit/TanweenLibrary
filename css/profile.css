@@ -1,17 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+
+
 body {
+  font-family: 'tajawal', Arial, Helvetica, sans-serif;
   background-color: #E0CEBE;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
-  direction: rtl;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 
 
 .profile-section {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  margin-top: 5%;
+  flex: 1;
 }
 
 
@@ -20,7 +26,7 @@ body {
   border-radius: 1em;
   padding: 2em;
   text-align: center;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   width: 300px;
 }
 
@@ -28,12 +34,12 @@ body {
   width: 120px;
   height: 120px;
   border-radius: 50%;
-  object-fit: cover;
   margin-bottom: 1em;
+  background-color: #bbb;
 }
 
 .user-name {
-  font-size: 1.8rem;
+  font-size: 2rem;
   color: #333;
   margin: 0;
 }
@@ -69,14 +75,4 @@ body {
   text-decoration: none;
   color: black;
   display: block;
-}
-
-
-footer {
-  margin-top: 5%;
-  background-color: #303280;
-  color: white;
-  padding: 2%;
-  text-align: center;
-  font-size: 1rem;
 }

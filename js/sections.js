@@ -12,7 +12,7 @@ function organizeBooksByGenre(books) {
 
 
 function addBooksToGenresSections(genres) {
-    const container = document.getElementById('books-container');
+    const container = document.getElementById('sections-container');
 
     for (const genre in genres) {
         const section = document.createElement('div');

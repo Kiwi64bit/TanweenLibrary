@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="auto">
+<html lang="en" dir="rtl">
 
 <head>
     <meta charset="UTF-8">
@@ -11,80 +11,39 @@
 </head>
 
 <body>
-    <header>
-        <div class="container header-container">
-            <a href="#" class="logo">تن<span>وين</span></a>
+    <section>
+        <div class="form">
+            <h1 class="signup">إنشاء حساب</h1>
 
-            <nav>
-                <ul>
-                    <li><a href="/index.html">الرئيسية</a></li>
-                    <li><a href="/pages/books.html"> الكتب</a></li>
-                    <li><a href="/pages/libraryInfo.html">من نحن</a></li>
-                    <li><a href="/pages/">اتصل بنا</a></li>
-                    <li><a href="/pages/settings.html">الاعدادات</a></li>
-                </ul>
-            </nav>
-
-            <div class="auth-buttons">
-                <a href="/pages/login.html" class="login-btn">تسجيل الدخول</a>
-                <a href="../index.html" class="register-btn">الصفحة الرئيسية</a>
+            <div class="info">
+                <div>
+                    <input type="text" placeholder="الإسم الأول">
+                </div>
+                <div>
+                    <input type="text" placeholder="الإسم الثاني">
+                </div>
+                <div>
+                    <input type="email" placeholder="البريد الإلكتروني">
+                    <img src="/assets/icons/3178158.png" alt="" width="20">
+                </div>
+                <div>
+                    <input type="password" placeholder="كلمة السر">
+                    <img src="/assets/icons/2889676.png" alt="" width="20">
+                </div>
+                <div>
+                    <input type="password" placeholder="إعادةكلمة السر">
+                    <img src="/assets/icons/2889676.png" alt="" width="20">
+                </div>
+                <button class="create-account">إنشاء حساب</button>
+            </div>
+            <div class="yes-account">
+                <p>لديك حساب؟</p>
+                <a href="/pages/login.html">تسجيل الدخول</a>
             </div>
         </div>
-    </header>
-    <div class="cont">
+    </section>
 
-        <div class="form1">
-            <h1>تن<span>وين</span></h1>
-            <p id="pp">انشاء حساب</p>
-
-
-
-
-
-            <form>
-                <div class="inUser1">
-                    <div class="divimg">
-                        <img id="imgUser" src="../assets/images/free-user-icon-3296-thumb.png" alt="">
-
-                    </div>
-                    <div class="divimg" id="div2">
-                        <img id="imgUser" src="../assets/images/free-user-icon-3296-thumb.png" alt="">
-
-                    </div>
-                    <div class="divimg" id="div2">
-                        <img id="imgUser" src="../assets/images/3178158.png" alt="">
-
-                    </div>
-                    <div class="divimg" id="div2">
-                        <img id="imgUser" src="../assets/images/2889676.png" alt="">
-
-                    </div>
-                    <div class="divimg" id="div2">
-                        <img id="imgUser" src="../assets/images/2889676.png" alt="">
-
-                    </div>
-                </div>
-                <div class="inUser">
-                    <input class="ll" type="text" placeholder="الاسم الاول ">
-                    <input class="ll" type="text" placeholder="الاسم الثاني">
-                    <input class="ll" type="email" placeholder=" الايميل">
-                    <input class="ll" type="password" placeholder="كلمة المرور">
-                    <input class="ll" type="password" placeholder=" اعادة كلمة المرور">
-                </div>
-                <button id="btnlogin"> انشاء حساب</button>
-
-            </form>
-            <div class="supdiv">
-                <input type="checkbox" name="remembre" id="pub-site">
-                <p id="lb">تذكرني</p>
-                <div id="forgt">
-                    <a href="/pages/login.html">لدي حساب بالفعل</a>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
+    <script src="/js/header-footer.js"></script>
 </body>
 
 </html>
